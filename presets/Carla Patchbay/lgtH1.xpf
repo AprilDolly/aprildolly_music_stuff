@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<!DOCTYPE lmms-project>
+<lmms-project creatorversion="1.2.2" type="instrumenttracksettings" creator="LMMS" version="1.0">
+  <head/>
+  <instrumenttracksettings solo="0" muted="0" type="0" name="lgtH1">
+    <instrumenttrack vol="200" pan="-100" basenote="57" pitchrange="1" fxch="12" usemasterpitch="1" pitch="0">
+      <instrument name="carlapatchbay">
+        <carlapatchbay>
+          <CARLA-PROJECT VERSION="2.2">
+            <EngineSettings>
+              <ForceStereo>false</ForceStereo>
+              <PreferPluginBridges>false</PreferPluginBridges>
+              <PreferUiBridges>true</PreferUiBridges>
+              <UIsAlwaysOnTop>false</UIsAlwaysOnTop>
+              <MaxParameters>200</MaxParameters>
+              <UIBridgesTimeout>4000</UIBridgesTimeout>
+              <LADSPA_PATH>/home/pass/.ladspa:/usr/lib/ladspa:/usr/local/lib/ladspa</LADSPA_PATH>
+              <DSSI_PATH>/home/pass/.dssi:/usr/lib/dssi:/usr/local/lib/dssi</DSSI_PATH>
+              <LV2_PATH>/home/pass/.lv2:/usr/lib/lv2:/usr/local/lib/lv2</LV2_PATH>
+              <VST2_PATH>/home/pass/.vst:/home/pass/.wine/drive_c/Program Files (x86)/VstPlugins:/home/pass/.wine/drive_c/Program Files/VstPlugins:/usr/lib/lxvst:/usr/lib/vst:/usr/local/lib/lxvst:/usr/local/lib/vst/home/pass/.lxvst:/home/pass/vst</VST2_PATH>
+              <VST3_PATH>/home/pass/.vst3:/home/pass/.wine/drive_c/Program Files (x86)/Common Files/VST3:/home/pass/.wine/drive_c/Program Files/Common Files/VST3:/usr/lib/vst3:/usr/local/lib/vst3</VST3_PATH>
+              <SF2_PATH>/home/pass/.sounds/sf2/home/pass/.sounds/sf3:/usr/share/soundfonts:/usr/share/sounds/sf2:/usr/share/sounds/sf3</SF2_PATH>
+              <SFZ_PATH>/home/pass/.sounds/sfz:/home/pass/samples:/usr/share/sounds/sfz</SFZ_PATH>
+            </EngineSettings>
+            <!-- sfizz -->
+            <Plugin>
+              <Info>
+                <Type>LV2</Type>
+                <Name>sfizz</Name>
+                <URI>http://sfztools.github.io/sfizz</URI>
+              </Info>
+              <Data>
+                <Active>Yes</Active>
+                <ControlChannel>1</ControlChannel>
+                <Options>0x3f0</Options>
+                <Parameter>
+                  <Index>0</Index>
+                  <Name>Volume</Name>
+                  <Symbol>volume</Symbol>
+                  <Value>0</Value>
+                </Parameter>
+                <Parameter>
+                  <Index>1</Index>
+                  <Name>Polyphony</Name>
+                  <Symbol>num_voices</Symbol>
+                  <Value>64</Value>
+                </Parameter>
+                <Parameter>
+                  <Index>2</Index>
+                  <Name>Internal oversampling factor</Name>
+                  <Symbol>oversampling</Symbol>
+                  <Value>1</Value>
+                </Parameter>
+                <Parameter>
+                  <Index>3</Index>
+                  <Name>Preload size</Name>
+                  <Symbol>preload_size</Symbol>
+                  <Value>8192</Value>
+                </Parameter>
+                <CustomData>
+                  <Type>http://lv2plug.in/ns/ext/atom#Path</Type>
+                  <Key>http://sfztools.github.io/sfizz:sfzfile</Key>
+                  <Value>/home/pass/samples/fakeguitar/_fakeguitar1_integrated.sfz</Value>
+                </CustomData>
+                <CustomData>
+                  <Type>http://lv2plug.in/ns/ext/atom#Int</Type>
+                  <Key>http://sfztools.github.io/sfizz:numvoices</Key>
+                  <Value>QAAAAA==</Value>
+                </CustomData>
+                <CustomData>
+                  <Type>http://lv2plug.in/ns/ext/atom#Int</Type>
+                  <Key>http://sfztools.github.io/sfizz:preload_size</Key>
+                  <Value>ACAAAA==</Value>
+                </CustomData>
+                <CustomData>
+                  <Type>http://lv2plug.in/ns/ext/atom#Int</Type>
+                  <Key>http://sfztools.github.io/sfizz:oversampling</Key>
+                  <Value>AQAAAA==</Value>
+                </CustomData>
+              </Data>
+            </Plugin>
+            <Patchbay>
+              <Connection>
+                <Source>Midi Input:Capture 1</Source>
+                <Target>sfizz:events-in</Target>
+              </Connection>
+              <Connection>
+                <Source>sfizz:Left Output</Source>
+                <Target>Audio Output:Left</Target>
+              </Connection>
+              <Connection>
+                <Source>sfizz:Right Output</Source>
+                <Target>Audio Output:Right</Target>
+              </Connection>
+              <Positions>
+                <Position x1="1693" y1="1353" pluginId="0">
+                  <Name>sfizz</Name>
+                </Position>
+              </Positions>
+            </Patchbay>
+          </CARLA-PROJECT>
+        </carlapatchbay>
+      </instrument>
+      <eldata fcut="14000" ftype="0" fres="0.5" fwet="0">
+        <elvol rel="0.1" dec="0.5" sustain="0.5" pdel="0" lspd="0.1" lamt="0" lspd_syncmode="0" x100="0" att="0" lspd_numerator="4" latt="0" lshp="0" ctlenvamt="0" hold="0.5" lspd_denominator="4" userwavefile="" amt="0" lpdel="0"/>
+        <elcut rel="0.1" dec="0.5" sustain="0.5" pdel="0" lspd="0.1" lamt="0" lspd_syncmode="0" x100="0" att="0" lspd_numerator="4" latt="0" lshp="0" ctlenvamt="0" hold="0.5" lspd_denominator="4" userwavefile="" amt="0" lpdel="0"/>
+        <elres rel="0.1" dec="0.5" sustain="0.5" pdel="0" lspd="0.1" lamt="0" lspd_syncmode="0" x100="0" att="0" lspd_numerator="4" latt="0" lshp="0" ctlenvamt="0" hold="0.5" lspd_denominator="4" userwavefile="" amt="0" lpdel="0"/>
+      </eldata>
+      <chordcreator chord="0" chordrange="1" chord-enabled="0"/>
+      <arpeggiator arpcycle="0" arpmiss="0" arptime_numerator="4" arpmode="0" arprange="1" arptime="200" arp="0" arptime_syncmode="0" arpskip="0" arptime_denominator="4" arpgate="100" arpdir="0" arp-enabled="0"/>
+      <midiport inputcontroller="0" writable="0" inputchannel="0" basevelocity="63" fixedoutputnote="-1" outputchannel="1" fixedinputvelocity="-1" outputcontroller="0" readable="0" outputprogram="1" fixedoutputvelocity="-1"/>
+      <fxchain numofeffects="0" enabled="0"/>
+    </instrumenttrack>
+  </instrumenttracksettings>
+</lmms-project>

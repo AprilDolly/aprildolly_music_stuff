@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<!DOCTYPE lmms-project>
+<lmms-project creator="LMMS" version="1.0" type="instrumenttracksettings" creatorversion="1.2.2">
+  <head/>
+  <instrumenttracksettings name="TripleOscillator" type="0" muted="0" solo="0">
+    <instrumenttrack pan="0" pitchrange="2" usemasterpitch="1" fxch="0" vol="200" basenote="57">
+      <pitch id="6553159" value="0" scale_type="linear"/>
+      <instrument name="tripleoscillator">
+        <tripleoscillator finer0="0" coarse0="0" finel0="0" stphdetun1="0" phoffset1="0" userwavefile0="" pan2="0" userwavefile1="" wavetype0="0" vol1="14" pan1="0" finel2="0" vol0="200" finel1="0" userwavefile2="" finer2="0" wavetype1="0" stphdetun2="0" stphdetun0="0" pan0="0" finer1="0" modalgo3="2" wavetype2="0" phoffset0="0" modalgo1="4" coarse2="-24" vol2="0" coarse1="0" phoffset2="0" modalgo2="2"/>
+      </instrument>
+      <eldata fres="0.5" ftype="0" fcut="14000" fwet="0">
+        <elvol dec="0.5" lpdel="0" lspd_numerator="4" hold="0.5" userwavefile="" x100="0" ctlenvamt="0" lspd_denominator="4" rel="0.1" lspd_syncmode="0" att="0" lamt="0" amt="0" sustain="0.5" pdel="0" lshp="0" latt="0" lspd="0.1"/>
+        <elcut dec="0.5" lpdel="0" lspd_numerator="4" hold="0.5" userwavefile="" x100="0" ctlenvamt="0" lspd_denominator="4" rel="0.1" lspd_syncmode="0" att="0" lamt="0" amt="0" sustain="0.5" pdel="0" lshp="0" latt="0" lspd="0.1"/>
+        <elres dec="0.5" lpdel="0" lspd_numerator="4" hold="0.5" userwavefile="" x100="0" ctlenvamt="0" lspd_denominator="4" rel="0.1" lspd_syncmode="0" att="0" lamt="0" amt="0" sustain="0.5" pdel="0" lshp="0" latt="0" lspd="0.1"/>
+      </eldata>
+      <chordcreator chord="0" chordrange="1" chord-enabled="0"/>
+      <arpeggiator arp="0" arpdir="0" arpskip="0" arptime_syncmode="0" arptime="200" arpmiss="0" arp-enabled="0" arprange="1" arptime_denominator="4" arpgate="100" arpcycle="0" arpmode="0" arptime_numerator="4"/>
+      <midiport outputprogram="1" outputchannel="1" fixedinputvelocity="-1" inputchannel="0" basevelocity="63" readable="0" inputcontroller="0" fixedoutputvelocity="-1" fixedoutputnote="-1" writable="0" outputcontroller="0"/>
+      <fxchain enabled="1" numofeffects="7">
+        <effect autoquit="1" on="0" autoquit_syncmode="0" name="ladspaeffect" autoquit_denominator="4" autoquit_numerator="4" gate="0" wet="1">
+          <ladspacontrols ports="7">
+            <port00 data="3.4875"/>
+            <port01 data="180"/>
+            <port02 data="100"/>
+            <port03 data="17"/>
+            <port04 data="20000"/>
+            <port05 data="0.55"/>
+            <port06 data="-0.6875"/>
+          </ladspacontrols>
+          <key>
+            <attribute name="file" value="tap_chorusflanger"/>
+            <attribute name="plugin" value="tap_chorusflanger"/>
+          </key>
+        </effect>
+        <effect autoquit="1" on="1" autoquit_syncmode="0" name="eq" autoquit_denominator="4" autoquit_numerator="4" gate="0" wet="1">
+          <Eq Peak3bw="0.3" LPres="0.707" HP="1" HighShelfres="1.4" Peak3active="0" Lowshelfgain="0" Peak3gain="0" Peak4bw="0.3" Outputgain="0" Lowshelfactive="0" HPactive="1" Peak2bw="0.3" HP24="1" Peak2active="0" HP48="0" LP24="0" Highshelfactive="0" LowShelfres="1.4" LP12="1" LPactive="1" HighShelfgain="0" Peak4active="0" LP48="0" Peak1active="0" HP12="0" AnalyseOut="1" Peak2gain="0" LP="0" HPres="0.707" AnalyseIn="1" Peak1bw="0.3" Peak4gain="0">
+            <Inputgain id="6442382" value="0" scale_type="log"/>
+            <Peak1gain id="988924" value="0" scale_type="log"/>
+            <HPfreq id="6872021" value="260.717" scale_type="log"/>
+            <LowShelffreq id="7479213" value="80" scale_type="log"/>
+            <Peak1freq id="7350563" value="120" scale_type="log"/>
+            <Peak2freq id="5255217" value="250" scale_type="log"/>
+            <Peak3freq id="1127550" value="2000" scale_type="log"/>
+            <Peak4freq id="1277792" value="4000" scale_type="log"/>
+            <Highshelffreq id="6719949" value="12000" scale_type="log"/>
+            <LPfreq id="1826032" value="1667.01" scale_type="log"/>
+          </Eq>
+          <key/>
+        </effect>
+        <effect autoquit="1" on="0" autoquit_syncmode="0" name="waveshaper" autoquit_denominator="4" autoquit_numerator="4" gate="0" wet="1">
+          <waveshapercontrols outputGain="1" inputGain="5" waveShape="AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgD8=" clipInput="1"/>
+          <key/>
+        </effect>
+        <effect autoquit="1" on="1" autoquit_syncmode="0" name="ladspaeffect" autoquit_denominator="4" autoquit_numerator="4" gate="0" wet="1">
+          <ladspacontrols link="1" ports="14">
+            <port01 data="10" link="1"/>
+            <port02 data="1" link="1"/>
+            <port03 data="0" link="1"/>
+            <port04 data="0" link="1"/>
+            <port05 data="0" link="1"/>
+            <port06 data="-13.3" link="1"/>
+            <port07 data="1" link="1"/>
+            <port11 data="10"/>
+            <port12 data="1"/>
+            <port13 data="0"/>
+            <port14 data="0"/>
+            <port15 data="0"/>
+            <port16 data="-13.3"/>
+            <port17 data="1"/>
+          </ladspacontrols>
+          <key>
+            <attribute name="file" value="caps"/>
+            <attribute name="plugin" value="AmpIV"/>
+          </key>
+        </effect>
+        <effect autoquit="1" on="1" autoquit_syncmode="0" name="ladspaeffect" autoquit_denominator="4" autoquit_numerator="4" gate="0" wet="1">
+          <ladspacontrols link="1" ports="4">
+            <port01 data="1" link="1"/>
+            <port02 data="-10.98" link="1"/>
+            <port11 data="1"/>
+            <port12 data="-10.98"/>
+          </ladspacontrols>
+          <key>
+            <attribute name="file" value="caps"/>
+            <attribute name="plugin" value="CabinetI"/>
+          </key>
+        </effect>
+        <effect autoquit="1" on="1" autoquit_syncmode="0" name="ladspaeffect" autoquit_denominator="4" autoquit_numerator="4" gate="0" wet="1">
+          <ladspacontrols link="1" ports="4">
+            <port00 link="1">
+              <data id="8382794" value="6153.06" scale_type="log"/>
+            </port00>
+            <port01 data="1" link="1"/>
+            <port10>
+              <data id="4111084" value="6153.06" scale_type="log"/>
+            </port10>
+            <port11 data="1"/>
+          </ladspacontrols>
+          <key>
+            <attribute name="file" value="lowpass_iir_1891"/>
+            <attribute name="plugin" value="lowpass_iir"/>
+          </key>
+        </effect>
+        <effect autoquit="1" on="1" autoquit_syncmode="0" name="ladspaeffect" autoquit_denominator="4" autoquit_numerator="4" gate="0" wet="1">
+          <ladspacontrols ports="4">
+            <port02 data="0.502"/>
+            <port03 data="0.3745"/>
+            <port04 data="0.218641"/>
+            <port05 data="0.2075"/>
+          </ladspacontrols>
+          <key>
+            <attribute name="file" value="caps"/>
+            <attribute name="plugin" value="Plate2x2"/>
+          </key>
+        </effect>
+      </fxchain>
+    </instrumenttrack>
+  </instrumenttracksettings>
+</lmms-project>

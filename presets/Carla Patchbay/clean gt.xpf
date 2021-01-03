@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<!DOCTYPE lmms-project>
+<lmms-project creator="LMMS" version="1.0" creatorversion="1.2.2" type="instrumenttracksettings">
+  <head/>
+  <instrumenttracksettings muted="0" solo="0" name="clean gt" type="0">
+    <instrumenttrack fxch="0" usemasterpitch="1" vol="101" pitch="0" pitchrange="1" pan="0" basenote="45">
+      <instrument name="carlapatchbay">
+        <carlapatchbay>
+          <CARLA-PROJECT VERSION="2.2">
+            <EngineSettings>
+              <ForceStereo>false</ForceStereo>
+              <PreferPluginBridges>false</PreferPluginBridges>
+              <PreferUiBridges>true</PreferUiBridges>
+              <UIsAlwaysOnTop>false</UIsAlwaysOnTop>
+              <MaxParameters>200</MaxParameters>
+              <UIBridgesTimeout>4000</UIBridgesTimeout>
+              <LADSPA_PATH>/home/pass/.ladspa:/usr/lib/ladspa:/usr/local/lib/ladspa</LADSPA_PATH>
+              <DSSI_PATH>/home/pass/.dssi:/usr/lib/dssi:/usr/local/lib/dssi</DSSI_PATH>
+              <LV2_PATH>/home/pass/.lv2:/usr/lib/lv2:/usr/local/lib/lv2</LV2_PATH>
+              <VST2_PATH>/home/pass/.vst:/home/pass/.wine/drive_c/Program Files (x86)/VstPlugins:/home/pass/.wine/drive_c/Program Files/VstPlugins:/home/pass/vst:/usr/lib/lxvst:/usr/lib/vst:/usr/local/lib/lxvst:/usr/local/lib/vst/home/pass/.lxvst</VST2_PATH>
+              <VST3_PATH>/home/pass/.vst3:/home/pass/.wine/drive_c/Program Files (x86)/Common Files/VST3:/home/pass/.wine/drive_c/Program Files/Common Files/VST3:/usr/lib/vst3:/usr/local/lib/vst3</VST3_PATH>
+              <SF2_PATH>/home/pass/.sounds/sf2/home/pass/.sounds/sf3:/home/pass/samples/soundfonts:/usr/share/soundfonts:/usr/share/sounds/sf2:/usr/share/sounds/sf3</SF2_PATH>
+              <SFZ_PATH>/home/pass/.sounds/sfz:/home/pass/samples:/usr/share/sounds/sfz</SFZ_PATH>
+            </EngineSettings>
+            <!-- sfizz -->
+            <Plugin>
+              <Info>
+                <Type>LV2</Type>
+                <Name>sfizz</Name>
+                <URI>http://sfztools.github.io/sfizz</URI>
+              </Info>
+              <Data>
+                <Active>Yes</Active>
+                <ControlChannel>1</ControlChannel>
+                <Options>0x3f0</Options>
+                <Parameter>
+                  <Index>0</Index>
+                  <Name>Volume</Name>
+                  <Symbol>volume</Symbol>
+                  <Value>0</Value>
+                </Parameter>
+                <Parameter>
+                  <Index>1</Index>
+                  <Name>Polyphony</Name>
+                  <Symbol>num_voices</Symbol>
+                  <Value>64</Value>
+                </Parameter>
+                <Parameter>
+                  <Index>2</Index>
+                  <Name>Internal oversampling factor</Name>
+                  <Symbol>oversampling</Symbol>
+                  <Value>1</Value>
+                </Parameter>
+                <Parameter>
+                  <Index>3</Index>
+                  <Name>Preload size</Name>
+                  <Symbol>preload_size</Symbol>
+                  <Value>8192</Value>
+                </Parameter>
+                <Parameter>
+                  <Index>5</Index>
+                  <Name>Scala root key</Name>
+                  <Symbol>scala_root_key</Symbol>
+                  <Value>60</Value>
+                </Parameter>
+                <Parameter>
+                  <Index>6</Index>
+                  <Name>Tuning frequency</Name>
+                  <Symbol>tuning_frequency</Symbol>
+                  <Value>440</Value>
+                </Parameter>
+                <Parameter>
+                  <Index>7</Index>
+                  <Name>Stretched tuning</Name>
+                  <Symbol>stretched_tuning</Symbol>
+                  <Value>0</Value>
+                </Parameter>
+                <CustomData>
+                  <Type>http://lv2plug.in/ns/ext/atom#Path</Type>
+                  <Key>http://sfztools.github.io/sfizz:sfzfile</Key>
+                  <Value>_fakeguitar1_integrated.sfz</Value>
+                </CustomData>
+                <CustomData>
+                  <Type>http://lv2plug.in/ns/ext/atom#Int</Type>
+                  <Key>http://sfztools.github.io/sfizz:numvoices</Key>
+                  <Value>QAAAAA==</Value>
+                </CustomData>
+                <CustomData>
+                  <Type>http://lv2plug.in/ns/ext/atom#Int</Type>
+                  <Key>http://sfztools.github.io/sfizz:preload_size</Key>
+                  <Value>ACAAAA==</Value>
+                </CustomData>
+                <CustomData>
+                  <Type>http://lv2plug.in/ns/ext/atom#Int</Type>
+                  <Key>http://sfztools.github.io/sfizz:oversampling</Key>
+                  <Value>AQAAAA==</Value>
+                </CustomData>
+                <CustomData>
+                  <Type>http://lv2plug.in/ns/ext/atom#Path</Type>
+                  <Key>http://sfztools.github.io/sfizz:tuningfile</Key>
+                  <Value>DefaultScale.scl</Value>
+                </CustomData>
+              </Data>
+            </Plugin>
+            <Patchbay>
+              <Connection>
+                <Source>Midi Input:Capture 1</Source>
+                <Target>sfizz:events-in</Target>
+              </Connection>
+              <Connection>
+                <Source>sfizz:Left Output</Source>
+                <Target>Audio Output:Left</Target>
+              </Connection>
+              <Connection>
+                <Source>sfizz:Right Output</Source>
+                <Target>Audio Output:Right</Target>
+              </Connection>
+              <Positions>
+                <Position y1="1353" pluginId="0" x1="1693">
+                  <Name>sfizz</Name>
+                </Position>
+              </Positions>
+            </Patchbay>
+          </CARLA-PROJECT>
+        </carlapatchbay>
+      </instrument>
+      <eldata fres="0.5" fwet="0" fcut="14000" ftype="0">
+        <elvol pdel="0" latt="0" lshp="0" lspd_denominator="4" lamt="0" amt="0" sustain="0.5" lspd_syncmode="0" att="0" x100="0" lspd_numerator="4" lspd="0.1" ctlenvamt="0" dec="0.5" lpdel="0" hold="0.5" userwavefile="" rel="0.1"/>
+        <elcut pdel="0" latt="0" lshp="0" lspd_denominator="4" lamt="0" amt="0" sustain="0.5" lspd_syncmode="0" att="0" x100="0" lspd_numerator="4" lspd="0.1" ctlenvamt="0" dec="0.5" lpdel="0" hold="0.5" userwavefile="" rel="0.1"/>
+        <elres pdel="0" latt="0" lshp="0" lspd_denominator="4" lamt="0" amt="0" sustain="0.5" lspd_syncmode="0" att="0" x100="0" lspd_numerator="4" lspd="0.1" ctlenvamt="0" dec="0.5" lpdel="0" hold="0.5" userwavefile="" rel="0.1"/>
+      </eldata>
+      <chordcreator chordrange="1" chord="0" chord-enabled="0"/>
+      <arpeggiator arptime="200" arpskip="0" arpgate="100" arptime_syncmode="0" arpmode="0" arprange="1" arp="0" arpcycle="0" arptime_denominator="4" arptime_numerator="4" arpdir="0" arp-enabled="0" arpmiss="0"/>
+      <midiport outputchannel="1" inputcontroller="0" inports="" outports="" inputchannel="0" basevelocity="63" outputprogram="1" readable="1" outputcontroller="0" fixedinputvelocity="-1" fixedoutputnote="-1" writable="1" fixedoutputvelocity="-1"/>
+      <fxchain numofeffects="3" enabled="1">
+        <effect wet="1" autoquit_denominator="4" on="1" autoquit_numerator="4" gate="0" autoquit_syncmode="0" autoquit="1" name="ladspaeffect">
+          <ladspacontrols ports="12" link="0">
+            <port01 data_syncmode="0" link="0" data_numerator="4" data_denominator="4">
+              <data value="4.21875" id="1597417" scale_type="log"/>
+            </port01>
+            <port02 data_syncmode="0" link="1" data="1.95938" data_numerator="4" data_denominator="4"/>
+            <port03 link="0" data="0.83125"/>
+            <port04 link="1" data="1"/>
+            <port05 link="0" data="0.605"/>
+            <port06 link="1" data="0"/>
+            <port11 data_syncmode="0" data_numerator="4" data_denominator="4">
+              <data value="5" id="8101823" scale_type="log"/>
+            </port11>
+            <port12 data_syncmode="0" data="1.95938" data_numerator="4" data_denominator="4"/>
+            <port13 data="1.66875"/>
+            <port14 data="1"/>
+            <port15 data="0.43875"/>
+            <port16 data="0"/>
+          </ladspacontrols>
+          <key>
+            <attribute value="caps" name="file"/>
+            <attribute value="ChorusI" name="plugin"/>
+          </key>
+        </effect>
+        <effect wet="1" autoquit_denominator="4" on="1" autoquit_numerator="4" gate="0" autoquit_syncmode="0" autoquit="1" name="ladspaeffect">
+          <ladspacontrols ports="9">
+            <port07>
+              <data value="0.989846" id="6962959" scale_type="log"/>
+            </port07>
+            <port08>
+              <data value="6324.56" id="5691541" scale_type="log"/>
+            </port08>
+            <port09 data="2"/>
+            <port010 data="0.5"/>
+            <port011 data="0.5"/>
+            <port012 data="1"/>
+            <port013 data="0"/>
+            <port014>
+              <data value="632.456" id="2700134" scale_type="log"/>
+            </port014>
+            <port015>
+              <data value="3556.56" id="3450079" scale_type="log"/>
+            </port015>
+          </ladspacontrols>
+          <key>
+            <attribute value="calf" name="file"/>
+            <attribute value="Reverb" name="plugin"/>
+          </key>
+        </effect>
+        <effect wet="1" autoquit_denominator="4" on="1" autoquit_numerator="4" gate="0" autoquit_syncmode="0" autoquit="1" name="eq">
+          <Eq Lowshelfactive="0" Peak1bw="0.3" Peak1active="0" LP48="0" HP24="0" HP48="0" LP="0" LPres="0.707" LP12="1" Peak3bw="0.3" LowShelfres="1.4" Outputgain="0" LPactive="0" HP12="1" Peak4active="0" Peak3gain="0" HighShelfres="1.4" LP24="0" Peak2gain="0" Peak3active="0" Peak2bw="0.3" HPactive="0" Peak4bw="0.3" Highshelfactive="1" HP="0" AnalyseIn="1" Peak2active="0" Lowshelfgain="0" HPres="0.707" Peak4gain="0" AnalyseOut="1" HighShelfgain="2.34">
+            <Inputgain value="0" id="2728854" scale_type="log"/>
+            <Peak1gain value="0" id="7044872" scale_type="log"/>
+            <HPfreq value="31" id="6571347" scale_type="log"/>
+            <LowShelffreq value="80" id="8343197" scale_type="log"/>
+            <Peak1freq value="120" id="449787" scale_type="log"/>
+            <Peak2freq value="250" id="5218942" scale_type="log"/>
+            <Peak3freq value="2000" id="890820" scale_type="log"/>
+            <Peak4freq value="4000" id="2887760" scale_type="log"/>
+            <Highshelffreq value="967.939" id="2312957" scale_type="log"/>
+            <LPfreq value="18000" id="4287177" scale_type="log"/>
+          </Eq>
+          <key/>
+        </effect>
+      </fxchain>
+    </instrumenttrack>
+  </instrumenttracksettings>
+</lmms-project>
